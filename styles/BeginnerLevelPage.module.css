@@ -1,0 +1,463 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+@media (max-width:768px) {
+  .title{
+    width: 500px;
+    height: 200px;
+  }  
+}
+@media (max-width:464px) {
+  .title{
+    width: 300px;
+    height: 200px;
+  }  
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.startButton {
+  background-color: #0070f3;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.startButton:hover {
+  background-color: #0051a8;
+}
+
+
+/* .countdown {
+    font-size: 100px;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .coinContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .coinLogo {
+    margin-right: 8px;
+  }
+  
+  .countdownContainer {
+    margin-bottom: 16px;
+  }
+  
+   */
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+  }
+  
+  .coinContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .coinLogo {
+    margin-right: 8px;
+  }
+  
+  .title {
+    font-size: 48px;
+=    margin-top: 32px;
+    color: white;
+  }
+  
+  .countdownContainer {
+    margin-top: 16px;
+  }
+  
+  .countdown {
+    font-size: 60px;
+    color: #d31818;
+  }
+  
+
+.lineContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  animation: moveLine 1s linear forwards;
+}
+
+@keyframes moveLine {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -50px;
+  }
+}
+
+.lineText {
+  position: absolute;
+  top: -20px;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+} */
+
+/* BeginnerLevelPage.module.css */
+/* BeginnerLevelPage.module.css */
+/* BeginnerLevelPage.module.css */
+
+.gamePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.lineContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  animation: moveLine 1s linear forwards;
+}
+
+@keyframes moveLine {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -50px;
+  }
+}
+
+.lineText {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.countdownContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.countdown {
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+}
+
+.title {
+  text-align: center;
+  display: block;
+  color: white;
+  margin: 0px auto;
+  font-size: 55px;
+}
+.title_e_m_H {
+  text-align: center;
+  color: black;
+  margin: 25px;
+  font-size: 55px;
+}
+@media (max-width:950px) {
+  .title_e_m_H {
+    margin-top: 160px;
+  }
+  
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+@media (max-width:600px) {
+  .cardContainer{
+    display: flex;
+    flex-direction:column;
+    margin-top: 95px;
+  }
+  
+}
+
+.cardImg {
+  width: 370px;
+  height: 350px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin: 30px 50px;
+  color: white;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* Adjust the margin as needed */
+}
+
+.otherCard {
+  width: 370px;
+  height: 350px;
+  margin: 10px;
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px 50px;
+  cursor: pointer;
+}
+  @media (max-width: 1050px) {
+    .otherCard {
+      margin: 25px 10px;
+    }
+  }
+
+  .selectedOtherCard {
+    border-color: white;
+    border-width: 2px;
+    font-weight: bold;
+  }
+
+  .pageContainer {
+    position: relative;
+    /* Add any other styles you need for the page container */
+  }
+
+  .topRightContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    /* Add any other styles you need for the top right container */
+  }
+
+  .coinImage {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    /* Add any other styles you need for the coin image */
+  }
+
+  .scoreWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: scaleIn 0.3s ease-in-out;
+    color: black;
+    border-radius: 30px;
+    border: 2px solid red;
+
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  .scoreWindow h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .scoreWindow p {
+    font-size: 25px;
+    margin-bottom: 50px;
+    animation: countUp 2s ease-in-out;
+    color: #a1a142;
+    font-weight: bold;
+  }
+
+  @keyframes countUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  /* BeginneLevelPage.module.css */
+
+  .pageContainer {
+    position: relative;
+  }
+
+  .scoreContainer {
+    position: absolute;
+    top: 20px;
+    right: 47px;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 780px) {
+    .scoreContainer {
+      margin-top: 160px;
+    }
+  }
+
+  .coinImage {
+    width: 63px;
+    height: 69px;
+    margin-right: 5px;
+    background: #c11515;
+    margin-right: 6px;
+  }
+
+  .scoreText {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .tick {
+    color: green;
+    font-size: 48px;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cross {
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cardImg {
+    position: relative;
+  }
+
+  /* .cardImg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid transparent;
+    transition: border-color 0.3s ease;
+  } */
+
+  .cardImg.correctGuess::after {
+    border-color: #fff;
+  }
+
+  .cardImg.wrongGuess::after {
+    border-color: #ff0000;
+  }
+  .cardName{
+    color: white;
+    background-color: white;
+  }

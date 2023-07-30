@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
   min-height: 100vh;
 }
 
@@ -64,14 +64,40 @@
   margin-bottom: 0.7rem;
 }
 
-.card p {
+/* .card p {
   margin: 0;
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+} */
+
+.card {
+  width: 30%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width:868px) {
+  .card{
+    width: 100%;
+    margin: 10px auto;
+  }
+  
 }
 
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+:hover .logo{
+  background-color: #000000;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -107,11 +133,31 @@
 .logo {
   position: relative;
 }
+.container {
+  display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 40px;
+}
+@media (max-width:868px) {
+  .container{
+    flex-direction: column;
+  }
+  
+}
+.myImg{
+  background-color: rgb(255, 255,255);
+  border-radius: 58px;
+  margin: 30px;
+  padding: 18px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    cursor: pointer;
   }
 
   .card:hover span {
@@ -141,6 +187,12 @@
   .card {
     padding: 1rem 2.5rem;
   }
+  @media (max-width: 868px) {
+    .card{
+      margin: 24px auto;
+    }
+  }
+  
 
   .card h2 {
     margin-bottom: 0.5rem;
@@ -214,9 +266,9 @@
     filter: invert(1);
   }
 
-  .logo {
+  /* .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
+  } */
 }
 
 @keyframes rotate {
@@ -226,4 +278,43 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.signoutButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  background: blue;
+  font-size: 23px;
+  border-radius: 9px;
+ 
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.parentGuideButton {
+  /* Add styles for the parent guide button */
+  background-color: blue;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-left: auto; /* Add this line to push the button to the right */
+  cursor: pointer;
+
+}
+
+.signoutButton {
+  /* Add styles for the sign-out button */
+  background-color: blue;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
 }
